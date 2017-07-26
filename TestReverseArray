@@ -1,0 +1,17 @@
+import static org.junit.Assert.*;
+import java.util.*;
+
+import org.junit.Test;
+
+public class TestReverseIntArray {
+	@Test
+	public void test() {
+		int numToReverse[] = {1,2,3,4};
+		int[] expected = {4,3,2,1}; 
+		int[] returned = ReverseArray.reverse(numToReverse);
+	if (!Arrays.equals(expected, returned)){
+		fail("You code stinks.");
+		}
+		}
+		
+	}
