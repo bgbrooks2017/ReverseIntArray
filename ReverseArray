@@ -1,0 +1,22 @@
+public class ReverseArray {
+
+	public static void main(String[] args){
+		
+	}
+	public static int[] reverse(int[] intsToReverse){
+		int counter = 0;
+		for (counter = 0; counter < intsToReverse.length/2; counter++){
+			int temp = intsToReverse[intsToReverse.length-1-counter];
+			intsToReverse[intsToReverse.length-1-counter]=intsToReverse[counter];
+			intsToReverse[counter] = temp;
+			
+		}
+    
+		//Print reversed array
+		for (counter = 0; counter < intsToReverse.length; counter++){
+			System.out.print(intsToReverse[counter]);
+		}
+		
+			return intsToReverse;	
+	}
+}
